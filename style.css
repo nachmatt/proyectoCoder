@@ -286,6 +286,8 @@ button:hover {
   row-gap: 3rem;
 }
 
+/*/ponerle un border box radiante a los títulos*/
+
 .titulos {
   margin: 0 auto;
   margin-top: 5rem;
