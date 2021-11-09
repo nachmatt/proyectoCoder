@@ -8,62 +8,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./sass/main.css"  rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
      <!-- INICIO DE HEADER -->
-     <header>
-        <h2><a href="index.html">PCPARTS</a></h2>
-        <nav>
-            <ul>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Integrantes</a></li>
-                <button onclick ="window.location.href='#contacto'">Contacto</button>
-            </ul>
+     <header class="top-header">
+        <nav class="nav navbar fixed-top navbar-expand-lg py-3 ms-auto bg dark navbar-dark">
+          <div class="container">
+            <h2><a href="index.html">PCPARTS</a></h2>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#productos">Productos</a></li>
+                <li class="nav-item"><a href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a href="#nosotros">Integrantes</a></li>
+                <li class="nav-item"><button onclick ="window.location.href='#contacto'" class="navbar-brand">Contacto</button></li>
+              </ul>
+            </div>
+          </div> 
         </nav>
-        
     </header>
     <!-- FIN DE HEADER-->
 
     <!-- INICIO DE "INICIO" -->
-    <section id="inicio" class="inicio" !important> 
-        <div class="slide-right">
-            <h1 class="mario" onclick="resetearDiv('inicio')">Armá la PC que siempre soñaste!</h1>
-            <img class="mario" src="mario.png" alt="mario-kart">
+    <main id="inicio" class="inicio container-fluid"> 
+        <div class="slide-right row">
+            <h1 class="mario container-fluid" onclick="resetearDiv('inicio')">Armá la PC que siempre soñaste!</h1>
         </div>
         <div class="slider">
             <div class="slide active">
-              <img src="slider5.jpeg" alt="">
+              <img src="./assets/slider5.jpeg" alt="">
               <div class="info">
                 <h2>Construí el setup de tus sueños!</h2>
                 <p>Contamos con más de 10 años de experiencia en el rubro, tenemos todo lo necesario para ajustar de manera personalizada tu setup a tus ideas.</p>
               </div>
             </div>
             <div class="slide">
-              <img src="slider4.jpg" alt="">
+              <img src="./assets/slider4.jpg" alt="">
               <div class="info">
                 <h2>Elevá tu juego al siguiente nivel.</h2>
                 <p>Con nuestros componentes y expertise vamos a ayudarte a que ganes cada partida y campeonato.</p>
               </div>
             </div>
             <div class="slide">
-              <img src="slider3.jpg" alt="">
+              <img src="./assets/slider3.jpg" alt="">
               <div class="info">
                 <h2>Variedad de componentes RGB y de streaming.</h2>
                 <p>Contamos con una amplia gama de componentes con iluminación RGB para que puedas tener la PC más fachera del condado, mientras tus espectadores disfrutan de tus streaming's.</p>
               </div>
             </div>
             <div class="slide">
-              <img src="slider1.jpg" alt="">
+              <img src="./assets/slider1.jpg" alt="">
               <div class="info">
                 <h2>Nuevos Arribos</h2>
                 <p>Nuevo ingreso de torres de la mejor calidad por parte de la conocidísima Thermaltake. Te vas a quedar sin la tuya??</p>
               </div>
             </div>
             <div class="slide">
-                <img src="slider.jpg" alt="">
+                <img src="./assets/slider.jpg" alt="">
                 <div class="info">
                   <h2>Especializados en gaming rigs</h2>
                   <p>Que nada te detenga a la hora de armar tu pc gaming soñada, te acompañamos paso a paso y ayudamos a elegir los mejores componentes.</p>
@@ -81,38 +87,42 @@
               <div class="slide-icon"></div>
             </div>
           </div>
-    </section>
+    </main>
     <!-- FINAL DE "INICIO"" -->
 
     <!-- INICIO DE PRODUCTOS -->
-    <div class="titulos"><h2>Productos</h2></div> 
-    <section id="productos" class="productos"> 
-            <div class="box"><img src="room2.jpg" alt=""></div>
-            <div class="box"><img src="room3.jpg" alt="Case's"></div>
-            <div class="box"><img src="room7.jpg" alt="Fans"></div>
-            <div class="box"><img src="room6.jpg" alt="AIO"></div>
+    <div class="titulos container-fluid"><h2>Productos</h2></div> 
+    <section id="productos" class="productos container-fluid"> 
+          <div class="row">
+            <div class="box col-12 col-lg-6 p-3"><img src="./assets/room2.jpg" alt=""></div>
+            <div class="box col-12 col-lg-6 p-3"><img src="./assets/room3.jpg" alt=""></div>
+          </div>
+          <div class="row">
+            <div class="box col-12 col-lg-6 p-3"><img src="./assets/room7.jpg" alt=""></div>
+            <div class="box col-12 col-lg-6 p-3"><img src="./assets/room6.jpg" alt=""></div>
+          </div>
     </section>
     <!-- FIN DE PRODUCTOS -->
 
     <!-- INICIO DE SERVICIOS -->
     <div class="titulos"><h2>Servicios</h2></div> 
-    <section id="servicios" class="servicios"> 
+    <section id="servicios" class="servicios container-fluid row"> 
         <!-- showcase de servicios con enlaces a los mismos -->
-        <div><img src="servicios1.jpg" alt="banner"><p>Reparación PC y Laptops.</p></div>
-        <div><img src="servicios3.jpg" alt="banner"><p>Armado de PC's y actualización de hardware.</p></div>
-        <div><img src="servicios2.jpg" alt="banner"><p>Limpieza de componentes.</p></div>
+        <div class="col-12 col-lg-6 p-4"><img src="./assets/servicios1.jpg" alt="banner"><p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="blank">Reparación PC y Laptops.</a></p></div>
+        <div class="col-12 col-lg-6 p-4"><img src="./assets/servicios2.jpg" alt="banner"><p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="blank">Armado de PC's</a></p></div>
+        <div class="col-12 col-lg-6 p-3"><img src="./assets/servicios3.jpg" alt="banner"><p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="blank">Actualización de Hardware.</a></p></div>
     </section>
     <!-- FIN DE SERVICIOS -->
 
     
     <!-- INICIO DE NOSOTROS-->
     <div class="titulos"><h2>Nosotros</h2></div> 
-    <section id="nosotros" class="nosotros"> 
+    <section id="nosotros" class="nosotros container row"> 
 
         <!-- showcase de Integrantes / tres cards con 3 integrantes ficticios -->
-        <div><img src="profile1.jpg" alt="integrante1"><h2>Nombre1</h2><p>Pequeña descripción1</p></div>
-        <div><img src="profile2.jpg" alt="integrante2"><h2>Nombre2</h2><p>Pequeña descripción2</p></div>
-        <div><img src="profile3.jpg" alt="integrante3"><h2>Nombre3</h2><p>Pequeña descripción3</p></div>
+        <div class="col-12 col-lg-4 p-3"><img src="./assets/profile1.jpg" alt="integrante1"><h2>Nombre1</h2><p>Pequeña descripción1</p></div>
+        <div class="col-12 col-lg-4 p-3"><img src="./assets/profile2.jpg" alt="integrante2"><h2>Nombre2</h2><p>Pequeña descripción2</p></div>
+        <div class="col-12 col-lg-4 p-3"><img src="./assets/profile3.jpg" alt="integrante3"><h2>Nombre3</h2><p>Pequeña descripción3</p></div>
         <!-- <p>Texto genérico describiendo a los integrantes del emprendimiento.</p> -->
     </section>
     <!-- FIN DE NOSOTROS-->
@@ -242,7 +252,9 @@
         }
         </script>         
     <!-- FIN  JAVASCRIPT SLIDER -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   </body>
 </html>
-      
+
+
