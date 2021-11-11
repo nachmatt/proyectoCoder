@@ -1,0 +1,1 @@
+SEO: Modificaciones en el index.html; cambio en el título de la web, adición de meta tags y meta descripción.
