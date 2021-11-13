@@ -1,6 +1,3 @@
-// script de funcionalidad Bootstrap
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 //inicio js de slider
 const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");
