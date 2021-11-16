@@ -12395,6 +12395,26 @@ button:hover {
   border: 1px solid #20e3b2;
 }
 
+.product h2, .product .h2 {
+  color: #222;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #FD2357;
+  -webkit-box-shadow: 0 15px 32px 5px rgba(25, 112, 105, 0.37);
+          box-shadow: 0 15px 32px 5px rgba(25, 112, 105, 0.37);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.product h2:hover, .product .h2:hover {
+  border: 1px solid #20e3b2;
+}
+
 .titulos {
   margin: 6rem auto;
   margin-bottom: 3.5rem;
@@ -12422,7 +12442,6 @@ button:hover {
 }
 
 .box img {
-  height: 100%;
   width: 100%;
   border-radius: 10px;
   border: 1px solid #20e3b2;
@@ -12523,15 +12542,16 @@ button:hover {
   border-radius: 15px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   text-align: center;
   width: 100%;
+  max-height: 45rem;
 }
 
 .nosotros div img:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
-  border: 1px solid #FD2357;
+  border: 2px solid #FD2357;
 }
 
 .nosotros div h2, .nosotros div .h2 {
