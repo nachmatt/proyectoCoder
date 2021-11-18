@@ -495,7 +495,7 @@ button:hover {
   
 /*INICIO Staggering*/ 
 .cuby {
-  margin: 1rem auto;
+  margin: .5rem auto;
   display: flex;
   justify-content: center;
 }
@@ -508,6 +508,7 @@ button:hover {
     color: #efecec;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 15px 50px 5px rgba(170, 32, 32, 0.37);
   }
   
   footer h3{

@@ -12653,7 +12653,7 @@ iframe {
 /* FIN CONTACTO*/
 /*INICIO Staggering*/
 .cuby {
-  margin: 1rem auto;
+  margin: .5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12670,6 +12670,8 @@ footer {
   color: #efecec;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  -webkit-box-shadow: 0 15px 50px 5px rgba(170, 32, 32, 0.37);
+          box-shadow: 0 15px 50px 5px rgba(170, 32, 32, 0.37);
 }
 
 footer h3, footer .h3 {
