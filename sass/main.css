@@ -12133,7 +12133,7 @@ li:hover, header a:hover {
   color: #FD2357;
 }
 
-button {
+.header button {
   background-color: inherit;
   padding: .5rem;
   border: 1px solid #FD2357;
@@ -12146,7 +12146,7 @@ button {
   font-weight: 500;
 }
 
-button:hover {
+.header button:hover {
   background-color: #FD2357;
 }
 
@@ -12453,6 +12453,22 @@ button:hover {
   border-radius: 10px;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.productos button {
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #FD2357;
+  color: #FD2357;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.productos button:hover {
+  width: 100%;
+  color: #010D21;
+  border: 1px solid #20e3b2;
+  cursor: pointer;
 }
 
 /* FIN PRODUCTOS */

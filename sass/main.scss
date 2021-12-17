@@ -1,6 +1,8 @@
 $enable-shadows: true;
 $enable-gradients: true;
 
+//importar scss de titulos 
+@import '_titles.scss';
 //importar bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -44,7 +46,7 @@ li:hover, header a:hover {
     color: #FD2357;
   }
 
-button {
+.header button {
     background-color: inherit;
     padding: .5rem;
     border: 1px solid #FD2357;
@@ -56,7 +58,7 @@ button {
     font-weight: 500;
 }
 
-button:hover {
+.header button:hover {
     background-color: #FD2357;
 }
 /* FIN HEADER */
@@ -288,28 +290,6 @@ button:hover {
   .product h2:hover {
     border: 1px solid #20e3b2;
   }
-
-  .titulos {
-    margin: 6rem auto;
-    margin-bottom: 3.5rem;
-    background:#010D21;
-    color: #efecec;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    transition: .5s ease-in-out;
-    width: fit-content;
-    padding: 1rem 3rem;
-    border-radius: 15px;
-    border: 1px groove #FD2357;
-    box-shadow: 2px 2px 40px 2px rgba(170, 32, 32, 0.37);
-  }
-  
-  .titulos:hover {
-    background: #efecec;
-    color: #FD2357;
-    cursor: pointer;
-  }
   
   .box img {
     width: 100%;
@@ -321,6 +301,22 @@ button:hover {
   .box img:hover {
     border-radius: 10px;  
     transform: scale(1.05);
+  }
+
+  .productos button  {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #FD2357;
+    color: #FD2357;
+    font-size: 2.5rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .productos button:hover {
+    width: 100%;
+    color: #010D21;
+    border: 1px solid #20e3b2;
+    cursor: pointer;
   }
   
   /* FIN PRODUCTOS */ 

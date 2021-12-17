@@ -83,3 +83,6 @@ function resetearDiv(elementID)
 {
     document.getElementById(elementID).innerHTML = document.getElementById(elementID).innerHTML;
 }
+
+
+
